@@ -42,9 +42,7 @@ class _MySliderPageState extends State<MySliderPage> {
                   divisions: 100,
                   label: sliderValueNotifier!.value.round().toStringAsFixed(0),
                   onChanged: (double value) {
-                    setState(() {
                       sliderValueNotifier!.value = value;
-                    });
                   },
                 ),
               ),
